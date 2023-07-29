@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:socloudy/pages/setting_page.dart';
 
 import '../models/weather_model.dart';
 
@@ -78,7 +79,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
                 onSelected: (item) => {
-
+                  if (item == 0){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingPage()))
+                  }
                 },
               ),
             ],
