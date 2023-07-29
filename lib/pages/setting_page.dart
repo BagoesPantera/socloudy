@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:socloudy/pages/policy_page.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class _SettingPageState extends State<SettingPage> {
               ],
             ),
             InkWell(
-              onTap: () { }, // Handle your callback
+              onTap: () { Navigator.push(context, MaterialPageRoute(builder: (context) => const PolicyPage())); }, // Handle your callback
               child: Ink( width: 900,
                 child:Container(
                   margin: const EdgeInsets.only(top: 10, bottom: 10),
