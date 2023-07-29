@@ -1,4 +1,4 @@
-package com.example.socloudy.socloudy;
+package com.sakunoki.socloudy;
 
 import io.flutter.embedding.android.FlutterActivity;
 
